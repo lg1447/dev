@@ -29,7 +29,7 @@
 .lgi-mts-music:before {
   content: "\e902";
 }
-.lgi-mts-music:before {
+.lgi-mts-music_r:before {
   content: "\e903";
 }
 .lgi-spotify:before {
