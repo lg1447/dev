@@ -15,6 +15,9 @@
 
             --accent-color: #e07b27;
 
+            --font-size-title-large: 48px;
+            --font-size-title-base: 40px;
+            --font-size-title-small: 32px;
             --font-size-base: 20px;
             --font-size-small: 16px;
         }
@@ -30,6 +33,9 @@
 
         @media (max-width: 600px) {
             :root {
+                --font-size-title-large: 36px;
+                --font-size-title-base: 28px;
+                --font-size-title-small: 20px;
                 --font-size-base: 16px;
                 --font-size-small: 13px;
             }
@@ -61,15 +67,15 @@
         h1 {
             color: var(--accent-color);
             margin: 0;
-            font-size: 40px;
+            font-size: var(--font-size-title-base);
         }
 
         header h1 {
-            font-size: 48px;
+            font-size: var(--font-size-title-large);
         }
 
         h2 {
-            font-size: 32px;
+            font-size: var(--font-size-title-small);
         }
 
         section {
