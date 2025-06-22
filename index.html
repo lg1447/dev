@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация | lg1447</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap" rel="stylesheet">
+    <link href="./icons/logos.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --second-color: #3b3b3b;
+            --text-color: #f0f0f0;
+            --border-color: #4b4b4b;
+
+            --accent-color: #e07b27;
+
+            --font-size-base: 20px;
+            --font-size-small: 16px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-color: #ffffff;
+                --second-color: #eee;
+                --text-color: #333333;
+                --border-color: #ccc;
+            }
+        }
+
+        @media (max-width: 600px) {
+            :root {
+                --font-size-base: 16px;
+                --font-size-small: 13px;
+            }
+        }
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color .5s, color .5s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            /* margin: 30px auto; */
+            padding: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--accent-color);
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section + section {
+            border-top: 1px solid var(--second-color);
+        }
+
+        p {
+            font-size: var(--font-size-base);
+        }
+
+        a {
+            padding: 5px 10px;
+            color: var(--accent-color);
+            background-color: var(--second-color);
+            text-decoration: none;
+            border: 1px solid var(--accent-color);
+            border-radius: 3px;
+        }
+
+        code {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: var(--font-size-small);
+        }
+
+        pre {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Документация</h1>
+    </header>
+    <div class="container">
+
+        <section>
+            <h1>Иконки</h1>
+            <a href="https://t.me/lg1447">Запросить новые лого</a>
+
+            <h2>Через svg:</h2>
+            <p>Использование:</p>
+            <code>&lt;img src="https://dev.lg1447.ru/icons/путь_к_иконке/{название иконки}.svg"&gt;</code>
+            <p>Пример:</p>
+            <img src="https://dev.lg1447.ru/icons/logos/telegram.svg" alt="" style="width: var(--font-size-base);">
+            <code>&lt;img src="https://dev.lg1447.ru/icons/logos/telegram.svg" alt="" style="width: var(--font-size-base);"&gt;</code>
+
+            <h2>Через шрифт:</h2>
+            <p>Установка:</p>
+            <code>&lt;link href="https://dev.lg1447.ru/icons/logos.css" rel="stylesheet"&gt;</code>
+            <p>Использование:</p>
+            <code>&lt;i class="lgi lgi-{название иконки}"&gt;&lt;/i&gt;</code>
+            <p>Пример:</p>
+            <i class="lgi lgi-vk"></i>
+            <code>&lt;i class="lgi lgi-vk"&gt;&lt;/i&gt;</code>
+            <p>Изменение цвета:</p>
+            <i class="lgi lgi-vk" style="color: #0077FF;"></i>
+            <code>&lt;i class="lgi lgi-vk" style="color: #0077FF;"&gt;&lt;/i&gt;</code>
+        </section>
+        <section></section>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>

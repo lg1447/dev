@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'lg1447-logos';
-  src: url(lg1447-logos.woff2) format('woff2'), url(lg1447-logos.ttf) format('truetype');
+  src: url('lg1447-logos.woff2') format('woff2'), url('lg1447-logos.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
